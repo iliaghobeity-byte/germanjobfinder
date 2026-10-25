@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>German Career Compass | کاریابی و نقشه راه مهاجرت کاری به آلمان</title>
+    <meta name="description" content="Smart job matchmaker, Opportunity Card calculator, German CV generator and immigration roadmap with Gemini AI." />
+    <meta property="og:title" content="German Career Compass" />
+    <meta property="og:description" content="Smart job matchmaker, Opportunity Card calculator, German CV generator and immigration roadmap with Gemini AI." />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('germany_job_finder_dark_mode');
+          if (saved === 'true' || (saved === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
